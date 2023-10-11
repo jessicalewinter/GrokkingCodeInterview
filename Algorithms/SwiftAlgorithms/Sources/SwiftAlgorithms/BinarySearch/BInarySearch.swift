@@ -5,7 +5,7 @@ import Foundation
 
 struct BinarySearch {
     func calculate(list: [Int], item: Int) -> Bool {
-            // list must be sorted
+        // list must be sorted
         var down = 0
         var high = list.count - 1
         
