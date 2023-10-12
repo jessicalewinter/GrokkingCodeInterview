@@ -24,10 +24,38 @@ final class BinarySearchTests: XCTestCase {
         XCTAssertEqual(result, output)
     }
     
-    func testSearch_WithTargetDoesNotExistInArray_ShouldReturnNegative1AsOutput() {
+    func testSearch_WithTargetDoesNotExistInArray_ShouldReturnNegativeOneAsOutput() {
         // Given
         let input = [4, 12, 14, 26, 33, 37, 45, 51, 53]
         let targetInput = 44
+        let sut = BinarySearch()
+        let output = -1
+        
+        // When
+        let result = sut.search(input, targetInput)
+        
+        // Then
+        XCTAssertEqual(result, output)
+    }
+    
+    func testSearch_WithTargetInputTwoExistsInArray_ShouldReturnOutputAsFour() {
+        // Given
+        let input = [-1, 0, 3, 5, 9, 12]
+        let targetInput = 9
+        let sut = BinarySearch()
+        let output = 4
+        
+        // When
+        let result = sut.search(input, targetInput)
+        
+        // Then
+        XCTAssertEqual(result, output)
+    }
+    
+    func testSearch_WithTargetInputTwoDoesNotExistsInArray_ShouldReturnOutputAsNegativeOne() {
+        // Given
+        let input = [-1, 0, 3, 5, 9, 12]
+        let targetInput = 2
         let sut = BinarySearch()
         let output = -1
         

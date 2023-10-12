@@ -6,8 +6,8 @@
 //
 
 import Foundation
-/// LeetCode:
 
+/// LeetCode: https://leetcode.com/problems/binary-search/
 struct BinarySearch {
     /// Conditions: Array must be already sorted
     /// Time Complexity: O(log(n))
