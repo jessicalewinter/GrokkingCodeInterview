@@ -7,7 +7,10 @@
 
 import Foundation
 
+/// LeetCode: https://leetcode.com/problems/top-k-frequent-elements/
 struct TopKFrequentElements {
+    /// Time Complexity: O(nlog(n))
+    /// Space Complexity: O(n)
     func calculate(_ nums: [Int], k: Int) -> [Int] {
         var frequencyDict = [Int: Int]()
         

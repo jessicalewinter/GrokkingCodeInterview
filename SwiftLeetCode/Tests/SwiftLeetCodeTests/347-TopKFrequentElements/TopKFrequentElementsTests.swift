@@ -40,7 +40,7 @@ final class TopKFrequentElementsTests: XCTestCase {
     
     func testCalculate_WithKAsOneAndInputArrayWithEqualOneElement_ShouldReturnTEmptyArray() {
         // Given
-        let inputArray: [Int] = [1, 1, 1, 1]
+        let inputArray: [Int] = [1]
         let inputK: Int = 1
         let output: [Int] = [1]
         let sut = TopKFrequentElements()
@@ -51,5 +51,4 @@ final class TopKFrequentElementsTests: XCTestCase {
         // Then
         XCTAssertEqual(result, output)
     }
-
 }
