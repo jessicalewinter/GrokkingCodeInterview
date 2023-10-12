@@ -1,5 +1,5 @@
 //
-//  TwoSumIISorted.swift
+//  TwoSumIISortedTests.swift
 //  
 //
 //  Created by Jessica Lewinter on 12/10/23.
@@ -8,16 +8,15 @@
 import XCTest
 @testable import SwiftLeetCode
 
-final class TwoSumIISorted: XCTestCase {
+final class TwoSumIISortedTests: XCTestCase {
     func testTwoSum_WithInputInOrder_ShoulReturnOriginalIndexes() {
         // Given
         let sut = TwoSumIISorted()
-        let inputArray = [2,7,11,15]
+        let inputArray = [2, 7, 11, 15]
         let targetInput = 9
         let output = [0, 1]
         
         // When
-        let hellp = TwoSumIISorted().mama()
         let result = sut.twoSum(inputArray, targetInput)
         
         // Then

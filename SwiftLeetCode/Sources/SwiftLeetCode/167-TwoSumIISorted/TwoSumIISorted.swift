@@ -7,8 +7,11 @@
 
 import Foundation
 
+/// LeetCode: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 struct TwoSumIISorted {
-    // input array is already sorted, we can use two pointers
+    /// Input array is already sorted, we can use the two pointers strategy
+    /// Time Complexity: O(n)
+    /// Space Complexity: O(1)
     func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
         var left = 0
         var right = numbers.count - 1
