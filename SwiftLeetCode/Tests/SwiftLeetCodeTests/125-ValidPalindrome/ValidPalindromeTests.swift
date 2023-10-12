@@ -12,7 +12,7 @@ final class ValidPalindromeTests: XCTestCase {
     func testIsPalindrome_withInputAWordPalindrome_ShouldReturnTrue() {
         // Given
         let sut = ValidPalindrome()
-        let input = "arara"
+        let input = "A man, a plan, a canal: Panama"
         let output = true
         
         // When
@@ -25,7 +25,7 @@ final class ValidPalindromeTests: XCTestCase {
     func testIsPalindrome_withInputNotAPalindrome_ShouldReturnTrue() {
         // Given
         let sut = ValidPalindrome()
-        let input = "cycle"
+        let input = "race a car"
         let output = false
         
         // When

@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct TwoSumII {
+struct TwoSumIISorted {
     // input array is already sorted, we can use two pointers
     func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
         var left = 0
-        var right = numbers.count
+        var right = numbers.count - 1
         
         while left < right {
             let sum = numbers[left] + numbers[right]
             if sum == target {
-                return [left, right]
+                return [left + 1, right + 1]
             }
             
             if sum < target {
@@ -24,7 +24,7 @@ struct TwoSumII {
             }
             
             if sum > target {
-                right += 1
+                right -= 1
             }
         }
         
